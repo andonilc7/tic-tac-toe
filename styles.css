@@ -1,0 +1,11 @@
+.gameboard {
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  grid-template-columns: repeat(3, max-content);
+}
+
+
+.spot {
+  border: 1px solid black;
+  padding: 20px;
+}
