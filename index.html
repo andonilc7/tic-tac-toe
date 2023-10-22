@@ -9,16 +9,45 @@
   </title>
 </head>
 <body>
-  <div class="gameboard">
-    <div class="spot" data-index="0"></div>
-    <div class="spot" data-index="1"></div>
-    <div class="spot" data-index="2"></div>
-    <div class="spot" data-index="3"></div>
-    <div class="spot" data-index="4"></div>
-    <div class="spot" data-index="5"></div>
-    <div class="spot" data-index="6"></div>
-    <div class="spot" data-index="7"></div>
-    <div class="spot" data-index="8"></div>
+  <div class="gameboard-container">
+    <div class="gameboard">
+      <div class="spot" data-index="0"></div>
+      <div class="spot" data-index="1"></div>
+      <div class="spot" data-index="2"></div>
+      <div class="spot" data-index="3"></div>
+      <div class="spot" data-index="4"></div>
+      <div class="spot" data-index="5"></div>
+      <div class="spot" data-index="6"></div>
+      <div class="spot" data-index="7"></div>
+      <div class="spot" data-index="8"></div>
+    </div>
   </div>
+  
+  <div class="message-container">
+    <div class="winner-message"></div>
+  </div>
+  
+  <form class="game-form">
+    
+    <div class="player-section">
+      <label class="player-label" for="player-one-input">Player One Name (X): </label>
+      <input class="player-input" id="player-one-input" type="text" placeholder="Player One" required>
+      
+    </div>
+    <div class="player-section player-two-container">
+      <label class="player-label" for="player-two-input">Player Two Name (O): </label>
+      <input class="player-input" id="player-two-input" type="text" placeholder="Player Two" required>
+      
+    </div>
+
+    <input type="submit" value="Start Game" class="start-btn">
+    
+  </form>
+  <div class="restart-container">
+  </div>
+  <!-- <div class="game-mode-container">
+    <button class="selected human">Player vs Player</button>
+    <button class="ai">Player vs AI</button>
+  </div> -->
 </body>
 </html>
