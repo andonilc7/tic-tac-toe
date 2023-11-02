@@ -58,6 +58,7 @@ const game = (function() {
   const playerTwoContainer = document.querySelector('.player-two-container')
 
   const winnerMessage = document.querySelector('.winner-message');
+  const messageContainer = document.querySelector('.message-container')
   const gameForm = document.querySelector('.game-form');
   const _playerOne = player("", "X")
   const _playerTwo = player("", "O")
@@ -74,8 +75,7 @@ const game = (function() {
   humanButton.addEventListener('click', (e) => {
     humanButton.classList.add('selected');
     aiButton.classList.remove('selected');
-    playerTwoContainer.style.visibility = "visible";
-    playerTwoInput.style.visibility = "visible"
+    playerTwoContainer.style.display = "grid";
     selector.style.visibility = "hidden"
     restart();
   })
@@ -83,8 +83,7 @@ const game = (function() {
   aiButton.addEventListener('click', (e) => {
     aiButton.classList.add('selected');
     humanButton.classList.remove('selected');
-    playerTwoContainer.style.visibility = "hidden";
-    playerTwoInput.style.visibility = "hidden";
+    playerTwoContainer.style.display = "none";
     selector.style.visibility = "visible"
     // input still shows even when do visibility hidden on safari.... (display:none, .remove() similar story)
     restart();
@@ -167,6 +166,7 @@ const game = (function() {
     gameBoard.render();
 
     winnerMessage.textContent = "";
+    messageContainer.style.display = "none";
     gameForm.appendChild(startBtn);
     restartBtn.remove();
 
@@ -362,10 +362,13 @@ const game = (function() {
   const displayWinner = () => {
     if (check(gameBoard.getBoard(), _playerOne)) {
       winnerMessage.textContent = "Winner is " + _playerOne.name + "!";
+      messageContainer.style.display = "flex";
     } else if (check(gameBoard.getBoard(), _playerTwo)) {
       winnerMessage.textContent = "Winner is " + _playerTwo.name + "!";
+      messageContainer.style.display = "flex";
     } else if (numOfTurns == 9) {
-      winnerMessage.textContent = "Tie"
+      winnerMessage.textContent = "Tie";
+      messageContainer.style.display = "flex";
     }
   }
 

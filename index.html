@@ -9,6 +9,11 @@
   </title>
 </head>
 <body>
+  
+  <h1 class="page-title">Tic Tac Toe</h1>
+
+  
+  <div class="content-container">
   <div class="gameboard-container">
     <div class="gameboard">
       <div class="spot" data-index="0"></div>
@@ -34,7 +39,7 @@
       <input class="player-input" id="player-one-input" type="text" placeholder="Player One" required>
       
     </div>
-    <div class="player-section player-two-container">
+    <div class="player-section player-two-container" >
       <label class="player-label" for="player-two-input">Player Two Name (O): </label>
       <input class="player-input" id="player-two-input" type="text" placeholder="Player Two" required>
       
@@ -47,11 +52,14 @@
   </div>
   <div class="game-mode-container">
     <button class="selected human">Player vs Player</button>
-    <button class="ai">Player vs AI</button>
-    <select class="selector">
-      <option class='easy difficulty' value="easy">Easy</option>
-      <option class='unbeatable difficulty' value="unbeatable">Unbeatable</option>
-    </select>
+    <div class="ai-container">
+      <button class="ai">Player vs AI</button>
+      <select class="selector">
+        <option class='easy difficulty' value="easy">Easy</option>
+        <option class='unbeatable difficulty' value="unbeatable">Unbeatable</option>
+      </select>
+    </div>
   </div>
+</div>
 </body>
 </html>
