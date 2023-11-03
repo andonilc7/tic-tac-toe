@@ -91,6 +91,8 @@ body {
   background-color: white;
 }
 
+
+
 .game-form {
   display: flex;
   flex-direction: column;
@@ -189,3 +191,47 @@ body {
   padding-top: 10px;
 }
 
+@media (max-width: 400px) {
+  .content-container {
+    width: 330px;
+  }
+
+  .page-title {
+    font-size: 1.9rem;
+    padding-bottom: 10px;
+  }
+
+  .player-section {
+    grid-template-columns: max-content 100px;
+    gap: 10px;
+  }
+
+  .player-label {
+    font-size: .9rem;
+  }
+  
+  .player-input {
+    font-size: 0.75rem;
+  }
+
+  .spot {
+    width: 70px;
+    height: 70px;
+  }
+
+  .restart-btn, .start-btn {
+    height: 30px;
+    width: 130px;
+  font-size: .9rem;  }
+
+  .ai, .human {
+    font-size: .7rem;
+    width: 120px;
+    height: 25px;
+  }
+
+  .selector {
+    font-size: .7rem;
+    padding-right: 15px;
+  }
+}
