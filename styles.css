@@ -23,7 +23,7 @@ body {
 
 .content-container {
   border: 1px solid black;
-  width: 550px;
+  width: min(550px, 90%);
   border-radius: 10px;
   background-color: #aecaea;
   box-shadow: 2px 8px 20px rgba(0,0,0,.35);
@@ -188,3 +188,4 @@ body {
 .game-mode-container {
   padding-top: 10px;
 }
+
