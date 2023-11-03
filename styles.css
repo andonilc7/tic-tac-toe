@@ -229,7 +229,7 @@ body {
   .ai, .human {
     font-size: .8rem;
     width: 120px;
-    height: 25px;
+    text-wrap: wrap;
   }
 
   .selector {
