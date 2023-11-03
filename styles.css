@@ -233,7 +233,6 @@ body {
 
   .ai, .human {
     font-size: .8rem;
-    display: flex;
   }
 
   .selector {
