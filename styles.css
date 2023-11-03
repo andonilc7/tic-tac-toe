@@ -224,7 +224,7 @@ body {
   .restart-btn, .start-btn {
     height: 30px;
     width: 130px;
-  font-size: 1rem;  }
+  font-size: 17px;  }
 
   .ai, .human {
     font-size: .8rem;
