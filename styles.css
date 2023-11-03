@@ -49,14 +49,19 @@ body {
 }
 
 .ai, .human {
-  width: 150px;
-  height: 30px;
+  width:fit-content;
+  height: max-content;
+  padding: 3px 7px;
   background-color: white;
   border: 2px solid #acacac;
   color: #acacac;
   border-radius: 10px;
   font-weight: 600;
   font-size: .85rem;
+}
+
+.ai {
+  padding: 3px 14px;
 }
 
 .restart-btn, .start-btn {
@@ -119,7 +124,7 @@ body {
   border-radius: 6px;
   padding-left: 4px;
   padding-right: 3px;
-  font-size: 1rem;
+  font-size: 16px;
   padding-top: 3px;
   padding-bottom: 3px;
 }
@@ -228,8 +233,7 @@ body {
 
   .ai, .human {
     font-size: .8rem;
-    width: 120px;
-    text-wrap: wrap;
+    display: flex;
   }
 
   .selector {
