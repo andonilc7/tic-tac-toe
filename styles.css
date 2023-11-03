@@ -103,21 +103,23 @@ body {
 .player-section {
   margin-bottom: 8px;
   display: grid;
-  grid-template-columns: 180px 120px;
+  grid-template-columns: max-content 140px;
+  gap: 12px;
   grid-template-rows: 1fr;
   align-items: center;
 }
 
 .player-label {
   grid-column: 1/2;
+  font-size: 1.1rem;
 }
 
 .player-input {
   border: 1px solid rgb(151, 151, 151);
   border-radius: 6px;
-  padding-left: 3px;
+  padding-left: 4px;
   padding-right: 3px;
-  font-size: .85rem;
+  font-size: 1rem;
   padding-top: 3px;
   padding-bottom: 3px;
 }
@@ -202,16 +204,16 @@ body {
   }
 
   .player-section {
-    grid-template-columns: max-content 100px;
+    grid-template-columns: max-content 120px;
     gap: 10px;
   }
 
   .player-label {
-    font-size: .9rem;
+    font-size: 1rem;
   }
   
   .player-input {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .spot {
@@ -222,16 +224,16 @@ body {
   .restart-btn, .start-btn {
     height: 30px;
     width: 130px;
-  font-size: .9rem;  }
+  font-size: 1rem;  }
 
   .ai, .human {
-    font-size: .7rem;
+    font-size: .8rem;
     width: 120px;
     height: 25px;
   }
 
   .selector {
-    font-size: .7rem;
+    font-size: .8rem;
     padding-right: 15px;
   }
 }
