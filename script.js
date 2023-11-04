@@ -301,8 +301,9 @@ const game = (function() {
       if (turn == 0) {
         gameBoard.setBoard(spotIndex, playerArray[0].mark);
         gameBoard.render();
-        displayWinner();
         numOfTurns++;
+        displayWinner();
+        
         console.log(emptySpots(gameBoard.getSpots()))
         gameBoard.setBoard(aiRand(), "O");
         numOfTurns++;
@@ -320,13 +321,15 @@ const game = (function() {
       if (turn == 0) {
         gameBoard.setBoard(spotIndex, playerArray[0].mark);
         gameBoard.render();
-        displayWinner();
         numOfTurns++;
+        displayWinner();
+        
         console.log(minimax(gameBoard.getBoard(), _playerTwo))
         gameBoard.setBoard(minimax(gameBoard.getBoard(), _playerTwo).index, "O");
         gameBoard.render();
-        displayWinner();
         numOfTurns++;
+        displayWinner();
+        
       } 
     }
   }
